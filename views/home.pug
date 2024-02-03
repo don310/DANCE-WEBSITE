@@ -1,0 +1,46 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style
+  style
+    include ../static/style.css
+
+block content 
+    section#introSection 
+        div  Welcome to Deepak's Dance Acadmey
+        div.small  Eat Sleep Dance Repeat
+
+    section#missionSection 
+        h2  Our Mission
+        div.card 
+            h3 Dance Perfection
+            div.card-box 
+                div.card-img 
+                    img(src="/static/img/5.png")
+                div.card-content 
+                    p This is the best dance academy of the universe
+        div.card 
+            h3 Dance the way you like
+             div.card-box 
+                div.card-img 
+                    img(src="/static/img/3.png")
+                div.card-content 
+                    p This is the best dance academy of the universe
+        div.card 
+            h3 Expert Teaching
+             div.card-box 
+                div.card-img 
+                    img(src="/static/img/4.png")
+                div.card-content 
+                    p This is the best dance academy of the universe
+
+    section#sponsorsSection 
+        h2  Our sponsors
+        div#sponsors 
+            img(src="/static/img/apple.png", alt="Sponsor Image", class="spImage")
+            img(src="/static/img/hp.png", alt="Sponsor Image", class="spImage")
+            img(src="/static/img/microsoft.png", alt="Sponsor Image", class="spImage")
+            img(src="/static/img/skype.png", alt="Sponsor Image", class="spImage")
+    
